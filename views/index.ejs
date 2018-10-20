@@ -1,0 +1,277 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Былинки из глубинки</title>
+	<link rel="stylesheet" href="css/style.css">
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+<body>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <!--Login-->
+          <div class="container-fluid">
+            <form class="form-signin">
+              <h2 class="form-signin-heading">Please sign in</h2>
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+          </div> <!-- /container -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- header -->
+    <div class="row row-conformity row-centered">
+          <div class="col-sm-2" style="border-left: 5px solid white">
+                  <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+                     <a href="#" style="text-decoration: none">
+                      <div class="collapse navbar-collapse" id="navbreg">
+                              <h1 style="color: #fc4044">i</h1>
+                              <h1 style="color: #14b538">Z</h1>
+                              <h1 style="color: #fc4044">G</h1>
+                              <h1 style="color: #14b538">L</h1>
+                              <h1 style="color: #fc4044">U</h1>
+                              <h1 style="color: #14b538">B</h1>
+                              <h1 style="color: #fc4044"><strong>.</strong></h1>
+                              <h1 style="color: #14b538">RU</h1>
+                      </div>
+                    </a>
+                  </nav>
+          </div>
+          <div class="col-sm-7"></div>
+
+          <div class="col-sm-3 my-auto text-right" style="border: 2px solid white;border-right: 18px solid white">
+                    <button class="btn btn-outline-success border-danger" type="submit" data-toggle="modal" data-target="#registr">Регистрация</button>
+                    <button class="btn btn-outline-success border-danger" type="submit">Войти</button>
+          </div>
+    </div>
+    <!-- end header -->
+
+    <!-- menu navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Каталог товаров <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка и оплата </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Интересные статьи </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Наши контакты</a>
+            </li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item"><a class="nav-link">      </a></li>
+            <li class="nav-item">
+                <form class="form-inline my-2 my-sm-0">
+                  <button class="btn btn-outline-danger border-white text-white text-center"
+                          type="submit">В КОРЗИНЕ НИЧЕГО НЕТ
+                  </button>
+              </form>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-sm-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск.." aria-label="Search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Поиск</button>
+          </form>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- login modal-->
+        <div id="registr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="registrLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="registrLabel">Регистрация</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                          <!--
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Адрес эл. почты" required autofocus>
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" required>
+
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                         <label class="form-check-label" for="gridCheck">Войти и сохранить пароль</label>
+                        -->
+
+                         <form class="form col-md-12 center-block">
+                                 <!--
+                                 <div class="form-group">
+                                   <input type="text" class="form-control input-lg" placeholder="Адрес эл. почты">
+                                 </div>
+                                 -->
+                                 <div class="form-group">
+                                     <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                            placeholder="sdgdfgd@fdhfh.ru" aria-describedby="inputGroupPrepend3" required>
+                                     <div class="invalid-feedback">Заполните адрес эл. почты</div>
+                                 </div>
+                                 <div class="form-group">
+                                   <input type="password" class="form-control input-lg" placeholder="Введите пароль">
+                                 </div>
+                                 <div class="form-group">
+                                   <input type="password" class="form-control input-lg" placeholder="Повторите пароль">
+                                 </div>
+                          </form>
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-success btn-lg btn-block">Сохранить</button>
+                <!--
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-success">Сохранить</button>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Modal
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+       	  <div class="modal-dialog">
+   				<div class="loginmodal-container">
+   					<h1>Login to Your Account</h1><br>
+   				  <form>
+   					<input type="text" name="user" placeholder="Username">
+   					<input type="password" name="pass" placeholder="Password">
+   					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+   				  </form>
+
+   				  <div class="login-help">
+   					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+   				  </div>
+   				</div>
+   			</div>
+   		  </div>
+        -->
+
+
+
+    <!-- end login modal-->
+
+    <!-- content -->
+    <div class="row">
+      <div class="col-sm-4">
+         <div class="btn-group-vertical text-left" style="border: 5px solid white; width: 230px"
+                                         role="group" aria-label="Button group">
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0 rounded-0 active">Молочные продукты</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Пчелиные продукты</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Консервы</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Саженцы</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Торты</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Напитки</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Пчелиные продукты</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Консервы</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0">Саженцы</button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0" disabled></button>
+                <button type="button" class="text-left btn btn-outline-success border-danger border-top-0 border-left-0 border-bottom-0 rounded-0" disabled></button>
+         </div>
+
+      </div>
+      <div class="col-sm-9"></div>
+    </div>
+
+    <!-- footer-->
+        <div class="navbar-fixed-bottom row-fluid">
+          <div class="navbar-inner col-sm-12 bg-success text-white text-center">
+              <div class="container">© 2019 </div>
+          </div>
+        </div>
+
+
+
+      <!-- footer
+        <div class="row col-sm-12 bg-success text-white text-center position-absolute
+                    row-conformity row-centered" style="bottom: 0px">
+          <div class="container">© 2019</div>
+        </div>
+       -->
+
+	<!-- this template is made by silvan paul -->
+</body>
+</html>
